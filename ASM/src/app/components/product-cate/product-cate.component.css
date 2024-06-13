@@ -1,0 +1,23 @@
+/* khi tôi hover vào 2 clas group và andi thì các thông tin đó ẩn đi */
+
+.view {
+  position: absolute;
+
+  top: 240px;
+  left: 35px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.view {
+  opacity: 0;
+}
+/* khi hover vào toàn group thì view 1 hiện lên và view2 ẩn đi thông tin */
+.group:hover .view {
+  opacity: 1; /* Hiển thị thông tin mới */
+  transition: opacity 0.1s ease; /* Thêm hiệu ứng transition */
+}
+.group:hover .view2 {
+  opacity: 0; /* Ẩn thông tin hiện tại */
+  transition: opacity 0.1s ease;
+}

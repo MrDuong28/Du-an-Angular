@@ -1,0 +1,11 @@
+<div class="flex flex-wrap justify-between mx-5">
+  @for(product2 of products ;track product2.name){
+  <div
+    class="w-[23%] flex-none max-w-sm bg-white border border-gray-200 rounded-lg shadow mt-10"
+  >
+    <app-product-1 [productday]="product2"></app-product-1>
+    <!-- productday lấy từ bên @Input() productday: Tproduct = {} as Tproduct; -->
+  </div>
+
+  }
+</div>

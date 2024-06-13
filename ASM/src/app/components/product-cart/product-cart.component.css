@@ -1,0 +1,14 @@
+.borderb {
+  border-bottom: 2px solid #1b1919;
+}
+.bottom-bd {
+  border-bottom: 3px solid gray;
+  width: 100%;
+}
+.imagetop {
+  position: relative;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

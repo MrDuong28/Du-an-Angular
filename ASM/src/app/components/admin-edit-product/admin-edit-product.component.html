@@ -1,0 +1,210 @@
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+/>
+<div class="min-h-screen flex flex-row">
+  <div
+    class="flex flex-col w-56 bg-blue-500 rounded-r-3xl overflow-hidden shadow-2xl"
+  >
+    <div class="flex items-center justify-center h-20 shadow-md">
+      <h1 class="text-3xl uppercase text-black">ADMIN</h1>
+    </div>
+    <ul class="flex flex-col py-4">
+      <li>
+        <a
+          href="admin"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-home"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="admin/listCate"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-music"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Category</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-drink"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Drink</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-shopping-bag"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Shopping</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-chat"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Chat</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-user"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Profile</span>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-black"
+            ><i class="bx bx-log-out"></i
+          ></span>
+          <span class="text-sm font-medium text-black">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- san pham -->
+
+  <div class="w-[83%] mt-20">
+    <div>
+      <form
+        class="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md"
+        [formGroup]="productForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <h1 class="text-center text-2xl">Sửa sản phẩm</h1>
+        <div class="mb-4">
+          <label
+            for="base-input"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Name :</label
+          >
+          <input
+            type="text"
+            id="base-input"
+            formControlName="name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+          <span
+            class="text-red-500 text-sm italic mt-2"
+            *ngIf="
+              !productForm.controls.name.valid &&
+              (productForm.controls.name.dirty ||
+                productForm.controls.name.touched)
+            "
+          >
+            Tên không được để trống
+          </span>
+        </div>
+        <div class="mb-5 max-w-[500px]">
+          <label
+            for="base-input"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Image :</label
+          >
+          <input
+            type="text"
+            id="base-input"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            formControlName="image"
+          />
+          <span
+            class="text-red-500 text-sm italic mt-2"
+            *ngIf="
+              !productForm.controls.image.valid &&
+              (productForm.controls.image.dirty ||
+                productForm.controls.image.touched)
+            "
+          >
+            Ảnh không được để trống
+          </span>
+        </div>
+        <div class="mb-5 max-w-[500px]">
+          <label
+            for="base-input"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Price :</label
+          >
+          <input
+            type="number"
+            id="base-input"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            formControlName="price"
+          />
+          <span
+            class="text-red-500 text-sm italic mt-2"
+            *ngIf="
+              !productForm.controls.name.valid &&
+              (productForm.controls.name.dirty ||
+                productForm.controls.name.touched)
+            "
+          >
+            Giá không được để trống và phải > 0
+          </span>
+        </div>
+        <div class="mb-5 max-w-[500px]">
+          <label
+            for="countries"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Select your country</label
+          >
+          <select
+            id="categories"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            formControlName="category"
+          >
+            <option
+              *ngFor="let category of categories"
+              [value]="category.name"
+              class="h-20px"
+            >
+              {{ category.name }}
+            </option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-green-600 hover:bg-rose-700 text-white font-bold py-2 px-8 rounded text-center mb-2 w-[100px]"
+          [disabled]="!productForm.valid"
+        >
+          Sửa
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

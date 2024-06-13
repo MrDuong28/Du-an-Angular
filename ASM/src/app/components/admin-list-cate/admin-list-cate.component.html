@@ -1,0 +1,103 @@
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+/>
+<div class="min-h-screen flex flex-row">
+  <div class="flex flex-col w-56 bg-blue-600 overflow-hidden shadow-2xl">
+    <div class="flex items-center justify-center h-20 shadow-md">
+      <h1 class="text-3xl text-white uppercase">ADMIN</h1>
+    </div>
+    <ul class="flex flex-col py-4">
+      <li>
+        <a
+          href="admin"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg"
+            ><i class="bx bx-home-heart"></i
+          ></span>
+          <span class="text-sm font-medium">Product</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="admin/listCate"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg"
+            ><i class="bx bxs-category"></i
+          ></span>
+          <span class="text-sm font-medium">Category</span>
+        </a>
+      </li>
+
+      <li>
+        <button
+          href="/home"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+          (click)="Logout()"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg"
+            ><i class="bx bx-log-out"></i
+          ></span>
+          <span class="text-sm font-medium">Logout</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- san pham -->
+
+  <div class="w-[83%] mx-auto">
+    <table
+      class="w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100"
+    >
+      <thead class="text-xs text-white uppercase bg-blue-600 dark:text-white">
+        <tr class="border">
+          <th scope="col" class="px-6 py-3 text-center">Category name</th>
+
+          <th scope="col" class="px-6 py-3 text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="bg-blue-500 border-b border-blue-400"
+          *ngFor="let cate of cates; let i = index"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+          >
+            {{ cate.name }}
+          </th>
+
+          <td class="px-6 py-4 text-center">
+            <a href="admin/editCate/{{ cate.id }}">
+              <button
+                class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              >
+                EDIT
+              </button>
+            </a>
+
+            <button
+              class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+              (click)="onDelete(cate.id)"
+            >
+              DELETE
+            </button>
+            <a href="admin/addCate">
+              <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                ADD
+              </button>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

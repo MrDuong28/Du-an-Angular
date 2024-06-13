@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "name": "Iphone",
+      "category": "Phone",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.iMrhNuHwZvMBUzrZjsH7fQHaHa&pid=Api&P=0&h=220",
+      "price": 100,
+      "id": "2"
+    },
+    {
+      "name": "Ps4",
+      "category": "Tay cầm",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.0OXtKY9t8yYPgSdz7q6ISAHaFj&pid=Api&P=0&h=220",
+      "price": 100,
+      "id": "3"
+    },
+    {
+      "name": "Iphone 13",
+      "category": "Phone",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.po-KWyjHUoT_yMADFB6XcAAAAA&pid=Api&P=0&h=220",
+      "price": 200,
+      "id": "4"
+    },
+    {
+      "name": "Ps5",
+      "category": "Tay cầm",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.vdNsz7Y7L04fwvx0TGt87wHaER&pid=Api&P=0&h=220",
+      "price": 500,
+      "id": "uap255i"
+    },
+    {
+      "name": "Dell",
+      "category": "Laptop",
+      "image": "https://img.mobygeek.com/crop/1200x628/2020/10/13/k976gjluc9infc5orutnqk-1200-80-6dfd.jpg",
+      "price": 500,
+      "id": "oC52mDU"
+    },
+    {
+      "name": "Asus",
+      "category": "Laptop",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6356/6356774ld.jpg",
+      "price": 600,
+      "id": "JZ-8yZW"
+    },
+    {
+      "name": "Macbook",
+      "category": "Laptop",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-pro-13-og-202005?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1587344054526",
+      "price": 700,
+      "id": "BGtw0Pi"
+    },
+    {
+      "name": "MSI",
+      "category": "Laptop",
+      "image": "https://phukienmaytinh.com.vn/wp-content/uploads/2020/02/MSI-GF63-3.jpg",
+      "price": 499,
+      "id": "gXPsY0J"
+    }
+  ],
+  "category": [
+    {
+      "id": "2",
+      "name": "Phone"
+    },
+    {
+      "name": "Tay cầm",
+      "id": "te_sHuB"
+    },
+    {
+      "name": "Laptop",
+      "id": "4Lk28sH"
+    }
+  ],
+  "users": [
+    {
+      "email": "dotuanduong287@gmai.com",
+      "password": "$2a$10$AVi2wOOEjL0hA6wwJaFa.eoM1rGo78T8pEjFeL5TBnphDhmO52K3i",
+      "name": "do tuan duong",
+      "id": 1
+    },
+    {
+      "email": "dotuanduong28@gmail.com",
+      "password": "$2a$10$MIyexl0wu2IULzo6dRAXu.4QuyWNDsRkFfn5TZlyRXLIP9Og.qA0e",
+      "name": "dotuanduong",
+      "id": 2
+    },
+    {
+      "email": "dotuanduong2807@gmail.com",
+      "password": "$2a$10$gKkVJn/3aNbkYDt0IcnmNOZKaAW3X3VsIBbEAewns.llhjQGx4nlO",
+      "name": "do tuan duong",
+      "id": 3
+    },
+    {
+      "email": "dotuanduong27@gmail.com",
+      "password": "$2a$10$l4Rx4rXc9h.eqAw4k0ueledY1lJGBAYmNu6K4B8E1gl53Vend02BC",
+      "name": "duongggg",
+      "id": 4
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$Ha8VwbhOhxElPiSy6U/qUuii2pf4uSm3G/sE6lT9SVyb/r6HJROhm",
+      "name": "mrduong",
+      "id": 1
+    },
+    {
+      "email": "duong@gmail.com",
+      "password": "$2a$10$MQZYVnk.3kpcT188d2QYtedbatvxOuyp5kj5rlZE5jgFI8La6JEPu",
+      "name": "Đỗ Tuấn Dương",
+      "id": 5
+    }
+  ]
+}

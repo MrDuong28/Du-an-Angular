@@ -1,0 +1,189 @@
+<div class="bg-white border-b border-gray-200 h-[70px] w-full">
+  <div
+    class="container py-5 px-16 flex justify-between items-center text-sm text-gray-600"
+  >
+    <div class="text-lg">Need help? Call us: (+98) 0234 456 789</div>
+    <div class="flex space-x-4 gap-2">
+      <a href="#" class="flex items-center gap-2 text-lg"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="20"
+          width="15"
+          viewBox="0 0 384 512"
+        >
+          <path
+            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+          />
+        </svg>
+        Our store</a
+      >
+      <a href="#" class="flex items-center gap-2 text-lg"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="14"
+          width="17.5"
+          viewBox="0 0 640 512"
+        >
+          <path
+            fill="#74C0FC"
+            d="M171.3 96H224v96H111.3l30.4-75.9C146.5 104 158.2 96 171.3 96zM272 192V96h81.2c9.7 0 18.9 4.4 25 12l67.2 84H272zm256.2 1L428.2 68c-18.2-22.8-45.8-36-75-36H171.3c-39.3 0-74.6 23.9-89.1 60.3L40.6 196.4C16.8 205.8 0 228.9 0 256V368c0 17.7 14.3 32 32 32H65.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H385.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H608c17.7 0 32-14.3 32-32V320c0-65.2-48.8-119-111.8-127zM434.7 368a48 48 0 1 1 90.5 32 48 48 0 1 1 -90.5-32zM160 336a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+          />
+        </svg>
+        Track your order</a
+      >
+    </div>
+  </div>
+</div>
+
+<!-- Main header -->
+<header class="bg-blue-950">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex w-[800px] justify-end ml-20">
+      <div class="flex items-center">
+        <img src="../../../assets/Image/logobanner.png" alt="" class="h-12" />
+      </div>
+
+      <!-- Search bar -->
+
+      <form
+        [formGroup]="searchform"
+        class="flex flex-1 justify-center"
+        (ngSubmit)="onSearch()"
+      >
+        <input
+          type="text"
+          placeholder="Search any things"
+          class="w-[55%] px-4 py-2 rounded-l-md focus:outline-none"
+          formControlName="keywords"
+        />
+        <button
+          type="submit"
+          class="bg-yellow-500 text-white px-4 py-2 rounded-r-md"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+
+    <!-- Icons and links -->
+    <div class="flex items-center space-x-6 text-white mr-16 gap-5">
+      <a href="dangky" class="flex items-center"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+          />
+        </svg>
+
+        Signin
+      </a>
+      <div class="flex items-center gap-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+          />
+        </svg>
+        <div
+          class="border-[0] h-5 w-5 flex justify-center items-center bg-orange-400 rounded-full font-thin text-xs"
+        >
+          0
+        </div>
+
+        <a href="#" class="flex items-center ml-3"> Wishlist</a>
+      </div>
+
+      <div class="flex items-center gap-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+          />
+        </svg>
+
+        <div
+          class="border-[0] h-5 w-5 flex justify-center items-center bg-orange-400 rounded-full font-thin text-xs"
+        >
+          0
+        </div>
+        <a href="#" class="flex items-center ml-3"> Cart</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-white shadow">
+  <div
+    class="container mx-auto px-6 py-[2px] flex justify-between items-center"
+  >
+    <!-- Categories dropdown -->
+    <div class="">
+      <button
+        class="bg-yellow-500 text-white py-4 rounded-md flex items-center focus:outline-none"
+      >
+        Browse categories <span class="ml-2">&#x25BE;</span>
+      </button>
+      <!-- Dropdown menu -->
+      <!-- Add dropdown items here -->
+    </div>
+
+    <!-- Menu links -->
+    <div class="flex space-x-10 text-gray-700 w-[900px]">
+      <div class="flex gap-14">
+        @for (menu of menus; track $index) {
+        <div *ngIf="menu.parent === 0" class="flex">
+          <a
+            href="{{ menu.path }}"
+            class="hover:text-blue-500 font-[20px] font-semibold"
+          >
+            {{ menu.name }}
+          </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5 mt-1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        }
+      </div>
+    </div>
+    <!-- Promo text -->
+    <div class="text-blue-500">30 Days Free Return</div>
+  </div>
+</nav>
+
+<br />

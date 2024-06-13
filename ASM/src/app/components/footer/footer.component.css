@@ -1,0 +1,7 @@
+.custom-gap-5px {
+  margin-left: 5px;
+}
+.carousel {
+  display: flex;
+  width: 100%;
+}
